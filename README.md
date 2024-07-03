@@ -14,5 +14,5 @@ This programme was not written at the request of my superiors, but purely becaus
 
 *The code is not fully fleshed out yet, and my colleagues are still making new requests and finding new bugs.
 
-由于本地项目和这里存放的项目格式和命名都不同，所以我选择手动上传而不是用git。
-I chose to upload it manually instead of using git since the local project is formatted and named differently than the one stored here.
+正在和git斗智斗勇。救我！
+Coping with git now. HELP!
