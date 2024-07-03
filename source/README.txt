@@ -1,0 +1,1 @@
+All other sources are removed because they're XinHua Meida's digital assets.
