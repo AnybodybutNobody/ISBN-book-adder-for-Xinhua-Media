@@ -19,7 +19,7 @@ import time
 import os
 from plyer import notification
 #plyer在打包的时候会出问题。使用pyinstaller打包的时候请添加'--hidden-import plyer.platforms.win.notification  pythonfilename.py'
-#plyer seems to have some problems whith the packaged version.Please add
+#plyer seems to have some problems with the packaged version.Please add
 #'--hidden-import plyer.platforms.win.notification pythonfilename.py' when packaging with pyinstaller.
 import easyocr
 import cv2
@@ -32,9 +32,9 @@ path = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 #Combine this with the relative location of the materials so that the program can still call the correct location after it has been packaged.
 time_sleep=float(input('根据网络及硬件情况，请输入点击搜索和报定后的延迟时间（单位：秒；请留出足够多的时间！至少7秒!）'
                        '\n请输入一个整数，输入后点击enter继续：'))
-#Depending on the network and hardware,
+#’Depending on the network and hardware,
 #please enter the delay time after clicking Search and Report Settings (in seconds; please allow enough time!At least 7 seconds!)'
-#（At least 7 seconds!) Please enter an integer and click enter to continue:
+#（At least 7 seconds!) Please enter an integer and click enter to continue:‘
 
 #公司的平台响应速度很感人，因此不得不设置一个缓冲时间。我不知道为什么一开始测试时输入浮点数time.sleep会报错，后来也没管了。
 #The b2b platform's response time sucks, so I had to set a buffer time.
@@ -42,10 +42,10 @@ time_sleep=float(input('根据网络及硬件情况，请输入点击搜索和�
 
 wether_caipei=input('是否要在当“采配库存”为0的时候添加书籍？'
                     '\n输入‘y’表示是，输入其他字符表示否（别带空格！）：')
-#Do you still want to add the book when its distributional storage is 0? Enter 'y' for yes, and any other character for no (no spaces!):
+#’Do you still want to add the book when its distributional storage is 0? Enter 'y' for yes, and any other character for no (no spaces!):‘
 
 pyautogui.PAUSE=1.25
-#孩子们，记得设置按键间隔，慢点不要紧重要的是稳定。
+#记得设置按键间隔，慢点不要紧重要的是稳定。
 #Remember to set the interval between keyboard inputs, it doesn't matter if it's relatively slow, what matters is its stability.
 
 line='未识别到网页标签'
@@ -93,7 +93,7 @@ def refresh(time):   #刷新网页端方法
         return None
 #其实，公司的平台不止响应速度感人，稳定性更加感人，会天天爆502 bad gateway的错误。这段函数能在按钮识别失败后刷新页面并为“是否重新提交表单”的对话框点“是”。
 #In fact, if the response time of the b2b platform sucks, then its stability is sucker.
-#This function can refresh the webpage and click'yes' for the coming dialog
+#This function can refresh the webpage and click'yes' for the coming dialog。
 
 
 with open (os.path.join(path,'source/shuhao.txt'), 'r', encoding='utf-8') as file:
