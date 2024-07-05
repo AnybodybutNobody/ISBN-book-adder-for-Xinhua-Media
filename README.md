@@ -1,6 +1,6 @@
-本脚本为本人在实习期间为新华传媒p2p平台写的基于ocr库的Python脚本。我只上传了代码本体，识别用到的素材因为是新华传媒的数字资产所以均不上传。
+本脚本为本人在实习期间为新华传媒b2b平台写的基于ocr库的Python脚本。我只上传了代码本体，识别用到的素材因为是新华传媒的数字资产所以均不上传。
 
-This script is a Python script based on the OCR libraries and I wrote it for the p2p platform of Xinhua Media during my internship. I've only uploaded the code itself, but not the material used for identification because they're digital assets of Xinhua Media.
+This script is a Python script based on the OCR libraries and I wrote it for the b2b platform of Xinhua Media during my internship. I've only uploaded the code itself, but not the material used for identification because they're digital assets of Xinhua Media.
 
 上传此代码的目的一是为了证明此程序由我创作以证明我在实习期间的作为，二是为了分享经验。接下来我会逐渐在代码中添加注释去解释为什么我会如此编辑代码，以及在哪些地方需要注意。
 
