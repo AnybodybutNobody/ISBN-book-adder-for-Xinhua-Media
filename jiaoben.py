@@ -37,7 +37,7 @@ time_sleep=float(input('根据网络及硬件情况，请输入点击搜索和�
 #（At least 7 seconds!) Please enter an integer and click enter to continue:
 
 #公司的平台响应速度很感人，因此不得不设置一个缓冲时间。我不知道为什么一开始测试时输入浮点数time.sleep会报错，后来也没管了。
-#The p2p platform's response time sucks, so I had to set a buffer time.
+#The b2b platform's response time sucks, so I had to set a buffer time.
 #I don't know why entering a float number for time.sleep will cause an error, and idk about it later.
 
 wether_caipei=input('是否要在当“采配库存”为0的时候添加书籍？'
@@ -92,7 +92,7 @@ def refresh(time):   #刷新网页端方法
         time.sleep(time)
         return None
 #其实，公司的平台不止响应速度感人，稳定性更加感人，会天天爆502 bad gateway的错误。这段函数能在按钮识别失败后刷新页面并为“是否重新提交表单”的对话框点“是”。
-#In fact, if the response time of the p2p platform sucks, then its stability is sucker.
+#In fact, if the response time of the b2b platform sucks, then its stability is sucker.
 #This function can refresh the webpage and click'yes' for the coming dialog
 
 
@@ -132,8 +132,8 @@ for line in lines:
     #The solution of clicking on fixed coordinates was finally used because recognising given input boxes and search buttons was too unstable.
 
     try:
-        if os.path.exists(os.path.join(path,'soource/screenshot_shibie.png')):
-            os.remove(os.path.join(path,'soource/screenshot_shibie.png'))
+        if os.path.exists(os.path.join(path,'source/screenshot_shibie.png')):
+            os.remove(os.path.join(path,'source/screenshot_shibie.png'))
         screenshot_shibie=pyautogui.screenshot(region=(820,675,270,60))
         screenshot_shibie.save(os.path.join(path, 'source/screenshot_shibie.png'))
         pretreated_shibie = cv2.imread(os.path.join(path, 'source/screenshot_shibie.png'))
@@ -150,7 +150,7 @@ for line in lines:
         dic_unexpected.update({line: '未找到书籍'})
         continue
         #识别该书是否存在。Identify whether the ISBN exists.
-        #如果不存在，程序会添加下一本。If it does not exist, the programme proceed and add the next book.
+        #如果不存在，程序会添加下一本。If it does not exist, the programme proceeds and adds the next book.
 
     try:
         pyautogui.locateOnScreen(os.path.join(path,'source/no_return.png'),confidence=0.65,region=(1660,680,85,215),grayscale=True)
